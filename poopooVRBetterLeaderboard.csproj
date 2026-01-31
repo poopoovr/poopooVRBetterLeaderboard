@@ -1,0 +1,101 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>poopooVRBetterLeaderboard</AssemblyName>
+    <Description>Enhances the Gorilla Tag leaderboard with FPS and ping metrics</Description>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- System assemblies -->
+    <Reference Include="mscorlib">
+      <HintPath>..\dependencies\mscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- BepInEx Core -->
+    <Reference Include="BepInEx">
+      <HintPath>..\dependencies\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Harmony for runtime patching -->
+    <Reference Include="0Harmony">
+      <HintPath>..\dependencies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Unity Engine assemblies -->
+    <Reference Include="UnityEngine">
+      <HintPath>..\dependencies\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\dependencies\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\dependencies\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Gorilla Tag game assemblies -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\dependencies\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Photon for networking -->
+    <Reference Include="Photon3Unity3D">
+      <HintPath>..\dependencies\Photon3Unity3D.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="PhotonRealtime">
+      <HintPath>..\dependencies\PhotonRealtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="PhotonUnityNetworking">
+      <HintPath>..\dependencies\PhotonUnityNetworking.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Unity UI and Web Request modules -->
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\dependencies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\dependencies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\dependencies\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\dependencies\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>..\dependencies\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\dependencies\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
